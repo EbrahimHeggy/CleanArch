@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CleanArch</string>
+    <string name="iphone">IPHONE</string>
+    <string name="samsung">SAMSUNG</string>
+    <string name="unknown">UNKNOWN</string>
+
+</resources>
