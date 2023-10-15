@@ -13,8 +13,7 @@ import kotlinx.coroutines.launch
 
 class PhoneViewModel(private val getPhoneUseCase: GetPhoneUseCase) : ViewModel() {
     private val _uiModel = MutableLiveData<UiModel>()
-    val uiModel: LiveData<UiModel>
-        get() = _uiModel
+    val uiModel: LiveData<UiModel> = _uiModel
 
     init {
         fetchAndDisplayPhone()
@@ -23,7 +22,7 @@ class PhoneViewModel(private val getPhoneUseCase: GetPhoneUseCase) : ViewModel()
     fun fetchAndDisplayPhone() {
         viewModelScope.launch {
             val phoneDM = getPhoneUseCase.execute()
-            _uiModel.value = phoneDM.toPhoneUiModel()
+            _uiModel.postValue(phoneDM.toPhoneUiModel())
         }
     }
 }

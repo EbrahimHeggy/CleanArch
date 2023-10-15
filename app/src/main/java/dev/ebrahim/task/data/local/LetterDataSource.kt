@@ -1,5 +1,5 @@
 package dev.ebrahim.task.data.local
 
-interface LetterDataSource {
+interface ILetterDataSource {
     fun getLetter(): String
 }
