@@ -75,8 +75,10 @@ dependencies {
     implementation ("org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.0")
     implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4")
     implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2")
+    implementation ("androidx.compose.runtime:runtime-livedata:1.0.0-beta01")
 
-   // implementation ("com.google.accompanist:accompanist-livedata:0.20.3")
+
+    // implementation ("com.google.accompanist:accompanist-livedata:0.20.3")
 
     // Hilt - Dagger
     implementation ("com.google.dagger:hilt-android:2.46.1")

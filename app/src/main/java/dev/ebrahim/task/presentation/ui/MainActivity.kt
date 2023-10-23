@@ -26,13 +26,16 @@ import androidx.compose.ui.unit.sp
 import dev.ebrahim.task.presentation.PhoneViewModel
 
 class MainActivity : ComponentActivity() {
-    private val viewModel: PhoneViewModel by viewModels()
+  //  private val viewModel: PhoneViewModel by viewModels()
+    private val textviewModel: TextChangeViewModel by viewModels()
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
             MaterialTheme {
-                PhoneScreen(viewModel)
+             //   PhoneScreen(viewModel)
+                TextScreen(textviewModel )
             }
         }
     }
